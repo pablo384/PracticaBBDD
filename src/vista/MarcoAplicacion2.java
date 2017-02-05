@@ -1,5 +1,6 @@
 package vista;
 
+import controlador.ControladorBotonEjecuta;
 import controlador.ControladorCargaMenus;
 
 import javax.swing.*;
@@ -46,14 +47,12 @@ public class MarcoAplicacion2 extends JFrame{
 
         JButton botonConsulta=new JButton("Consulta");
 
-        //botonConsulta.addActionListener(e -> ejecutaConsulta());
-
         add(botonConsulta, BorderLayout.SOUTH);
-
+        botonConsulta.addActionListener(new ControladorBotonEjecuta(this));
         addWindowListener(new ControladorCargaMenus(this));
     }
 
     public JComboBox secciones;
     public JComboBox paises;
-    private JTextArea resultado;
+    public JTextArea resultado;
 }

@@ -25,6 +25,9 @@ public class CargaMenus {
 //            miProducto.setSeccion(rs.getString(1));
 //            miProducto.setpOrigen(rs2.getString(1));
 
+//            rs.close();
+//            rs2.close();
+//            accesoBBDD.close();
 
 
         }catch (Exception e){

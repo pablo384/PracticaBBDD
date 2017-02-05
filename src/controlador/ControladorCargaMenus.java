@@ -25,6 +25,7 @@ public class ControladorCargaMenus extends WindowAdapter{
             obj.rs.close();
             obj.rs2.close();
 
+
         }catch (Exception e2){
             e2.printStackTrace();
         }
