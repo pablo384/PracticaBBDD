@@ -1,6 +1,6 @@
 package vista;
 
-import controlador.ControladorCargaSecciones;
+import controlador.ControladorCargaMenus;
 
 import javax.swing.*;
 import java.awt.*;
@@ -50,10 +50,10 @@ public class MarcoAplicacion2 extends JFrame{
 
         add(botonConsulta, BorderLayout.SOUTH);
 
-        addWindowListener(new ControladorCargaSecciones(this));
+        addWindowListener(new ControladorCargaMenus(this));
     }
 
     public JComboBox secciones;
-    private JComboBox paises;
+    public JComboBox paises;
     private JTextArea resultado;
 }
