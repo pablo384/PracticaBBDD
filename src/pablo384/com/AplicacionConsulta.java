@@ -161,11 +161,8 @@ class Marco_Aplicacion extends JFrame{
     private final String consultaAll="SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE SECCIÓN=? AND PAÍSDEORIGEN=?";
 
     private JComboBox secciones;
-
     private JComboBox paises;
-
     private JTextArea resultado;
-
 
 
 }
