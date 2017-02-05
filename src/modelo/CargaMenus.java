@@ -11,7 +11,7 @@ public class CargaMenus {
     public String ejecutaConsultas(){
         Productos miProducto=null;
 
-        Connection accesoBBDD= miConexion.dameConexion();
+        accesoBBDD= miConexion.dameConexion();
 
         try{
 
@@ -52,6 +52,7 @@ public class CargaMenus {
 //    }
 
     public Conexion miConexion;
+    public Connection accesoBBDD;
     public ResultSet rs;
     public ResultSet rs2;
 }
